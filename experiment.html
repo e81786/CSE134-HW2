@@ -138,24 +138,11 @@
         </tr>
       </table>
 
-      <canvas id="myCanvas">
-        Your browser does not support the canvas tag.
-      </canvas>
-
-      <script>
-        var canvas = document.getElementById("myCanvas");
-        var ctx = canvas.getContext("2d");
-        ctx.fillStyle = "#FF0000";
-        ctx.fillRect(0, 0, 80, 80);
-      </script>
-
-      <canvas id="myblank"> canvas.ucsd.edu </canvas>
+      <canvas id="myblank" height="300" width="300"> canvas.ucsd.edu </canvas>
 
       <script>
         var canvas = document.getElementById("myblank");
         var cs = canvas.getContext("2d");
-        cs.fillStyle = "#FF0000";
-        cs.fillRect(0, 0, 80, 80);
         cs.fillStyle = "#000000";
         cs.fillRect(50, 50, 100, 100);
         cs.fillRect(200, 50, 200, 100);
