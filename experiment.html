@@ -149,15 +149,17 @@
         ctx.fillRect(0, 0, 80, 80);
       </script>
 
-      <canvas id="blank" width="300" height="300"> canvas.ucsd.edu </canvas>
+      <canvas id="myblank"> canvas.ucsd.edu </canvas>
 
       <script>
-        var canvas = document.getElementById("blank");
+        var canvas = document.getElementById("myblank");
         var cs = c.getContext("2d");
-        cs.fillStyle = "black";
+        ctx.fillStyle = "#FF0000";
+        ctx.fillRect(0, 0, 80, 80);
+        cs.fillStyle = "#000000";
         cs.fillRect(50, 50, 100, 100);
         cs.fillRect(200, 50, 200, 100);
-        cs.fillStyle = "yellow";
+        cs.fillStyle = "#FFFF00";
         cs.fillRect(50, 250, 250, 50);
       </script>
 
